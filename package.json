@@ -1,0 +1,26 @@
+{
+    "name": "kabanery-editor",
+    "version": "0.0.1",
+    "description": "editor widget for kabanery",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LoveKino/kabanery-editor.git"
+    },
+    "keywords": [
+        "editor",
+        "kabanery"
+    ],
+    "author": "ddchen",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LoveKino/kabanery-editor/issues"
+    },
+    "homepage": "https://github.com/LoveKino/kabanery-editor#readme",
+    "link_dependencies": {
+        "kabanery": "~0.0.1"
+    }
+}
