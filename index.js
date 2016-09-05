@@ -17,7 +17,8 @@ let count = 0;
 /**
  * {
  *  id,
- *  content
+ *  content,
+ *  onchange
  * }
  */
 module.exports = view((data) => {
@@ -39,6 +40,7 @@ module.exports = view((data) => {
         },
         onkeyup: () => {
             data.content = editor.getValue();
+            data.onchange && data.onchange(data.content);
         }
     });
 });
