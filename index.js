@@ -30,10 +30,19 @@ module.exports = view((data) => {
         let curNode = document.getElementById(data.id);
         let parent = curNode.parentNode;
         parent.removeChild(curNode);
-        let newChild = document.createElement('div');
-        newChild.id = data.id;
-        newChild.style = 'width:100%;height:100%';
+
+        let newChild = n(`div id=${data.id}`, {
+            style: {
+                width: '100%',
+                height: '100%'
+            },
+            onkeyup: () => {
+                data.content = editor.getValue();
+                data.onchange && data.onchange(data.content);
+            }
+        });
         parent.appendChild(newChild);
+
         editor = ace.edit(data.id);
         editor.getSession().setMode('ace/mode/javascript');
         editor.setTheme('ace/theme/monokai');
