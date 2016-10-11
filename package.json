@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/LoveKino/kabanery-editor#readme",
   "dependencies": {
+    "brace": "^0.8.0",
     "kabanery": "^0.1.0"
   }
 }
