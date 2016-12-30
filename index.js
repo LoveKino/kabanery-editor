@@ -28,6 +28,7 @@ module.exports = view((data) => {
     // TODO opt
     setTimeout(() => {
         let curNode = document.getElementById(data.id);
+        if(!curNode) return;
         let parent = curNode.parentNode;
         parent.removeChild(curNode);
 
