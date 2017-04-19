@@ -1,6 +1,6 @@
 {
   "name": "kabanery-editor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "editor widget for kabanery",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,6 @@
   "homepage": "https://github.com/LoveKino/kabanery-editor#readme",
   "dependencies": {
     "brace": "^0.10.0",
-    "kabanery": "^0.1.0"
+    "kabanery": "^0.1.8"
   }
 }
