@@ -22,7 +22,7 @@
   "homepage": "https://github.com/LoveKino/kabanery-editor#readme",
   "dependencies": {
     "brace": "^0.10.0",
-    "kabanery": "^0.2.2"
+    "kabanery": "^0.2.3"
   },
   "devDependencies": {
     "browser-js-env": "0.0.9",
