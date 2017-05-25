@@ -1,10 +1,10 @@
 {
   "name": "kabanery-editor",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "editor widget for kabanery",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha \"test/function/**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,12 @@
   "dependencies": {
     "brace": "^0.10.0",
     "kabanery": "^0.2.2"
+  },
+  "devDependencies": {
+    "browser-js-env": "0.0.9",
+    "es6-promisify": "^5.0.0",
+    "jsenhance": "0.0.3",
+    "mocha": "^3.4.2",
+    "webpack": "^2.6.0"
   }
 }

@@ -5,7 +5,7 @@
  */
 
 let {
-    n, view
+    n, view, mount
 } = require('kabanery');
 
 var ace = require('brace');
@@ -42,7 +42,8 @@ module.exports = view((data) => {
                 data.onchange && data.onchange(data.content);
             }
         });
-        parent.appendChild(newChild);
+
+        mount(newChild, parent);
 
         editor = ace.edit(data.id);
         editor.getSession().setMode('ace/mode/javascript');
